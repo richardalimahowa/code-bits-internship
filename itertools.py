@@ -14,3 +14,4 @@ for l in itertools product (*L):
     s_max = s
     L_max = l
 print(s_max)
+ 
