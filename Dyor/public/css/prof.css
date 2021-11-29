@@ -1,0 +1,143 @@
+
+/*    ###########################    CSS STYES FOR THE PRODUCT PAGE    ###########################  */
+
+
+/*      ###########################   NAV BAR     ###########################*/
+@import 'nav.css';  /*we'll have same navbar in all pages.*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h2{
+    font-family: sans-serif;
+    font-size: 47px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
+h3{
+    font-size: 28px;
+    text-transform: capitalize;
+    letter-spacing: -2px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    justify-content:space-between;
+    height: 40px;
+    flex: 0 0 auto;
+    padding: 0 10px;
+    margin-left: 20px;
+    margin-right: 54px;
+
+
+}
+.categories{
+    width: 400px;
+    margin-right: 415px;
+}
+.lists{
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+.link{
+    text-decoration: none;
+    color: #383838;
+}
+.link:hover{
+    color: orangered;
+}
+#active{
+    color:orangered;
+}
+.line{
+    background-color: steelblue;
+    height: 5px;
+    width: 20px;
+}
+.menu{
+    width: 100px;
+    margin-left: 8px;;
+}
+.brand{
+    height: 51px;
+    margin-left: 528px;
+}
+.bar{
+    width: 25px;
+    background-color: black;
+    height:3px;
+    margin:5px 0;
+}
+.product-image{
+    display: flex;
+    flex-wrap: wrap;
+}
+.discount-price{
+    font-size:20px;
+    font-weight: 600;
+}
+.actual-price{
+    opacity: .6;
+    text-decoration: line-through;
+    font-style: italic;
+}
+.discount{
+    color: red;
+    font-weight: 600;
+}
+
+.imgs{
+    height: 300px;
+    width: 300px;
+    margin-top: 10px;
+}
+.imgs:hover{
+    transform: scale(1.05);
+}
+.product-thumb::before{
+    content: new;
+}
+.product-thumb{
+    position: relative;
+    width: 400px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    height: 420px;
+    display: block;
+    text-align: center;
+    border: 1px solid #f0ebeb;
+    margin: 25px 20px;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    
+}
+.product-thumb img{
+object-fit: scale-down;
+}
+.product-thumb p{
+    line-height: 25px;
+}
+.btn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translate(-50%);
+    border: none;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 15px;
+
+    width:100%;
+}
+.btn:hover{
+    font-style: italic;
+    color: orangered;
+    background-color: whitesmoke;
+}

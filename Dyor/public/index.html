@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!--a document type declaration-->
+<!--Starting point for A simple ecommerce website for fashion
+    @Collaborators: Mark_T, Richard -->
+
+<html lang="en-US">
+<!--to declare the language of the Web page. -->
+
+<head>
+  <meta charset="UTF- 8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- CSS FOR HOME -->
+  <link rel="stylesheet" href="./css/home.css" />
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <!-- JQUERY FOR EASIER ELEMENT HANDLING-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <title>Title </title>
+</head>
+
+<body>
+  <!-- /*      ###########################   NAV BAR     ###########################*/ -->
+
+  <header>
+    <nav class="navbar">
+      <div class="navbar-mobile-label">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <div class="mobile-nav">
+          <ul>
+            <li class="active"><a href="index.html">HOME</a> </li>
+            <li><a href="product.html">MEN</a></li>
+            <li><a href="product.html">WOMEN</a></li>
+            <li><a href="product.html">ACCESSORIES</a></li>
+            <li><a href="checkout.html">CHECKOUT</a></li>
+          </ul>
+        </div>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </div>
+      <div class="nav-menu-container">
+        <ul>
+          <li class="active"><a href="index.html">Home</a> </li>
+          <li><a href="product.html">MEN</a></li>
+          <li><a href="product.html">WOMEN</a></li>
+          <li><a href="product.html">ACCESSORIES</a></li>
+          <li><a href="#">CHECKOUT</a></li>
+        </ul>
+      </div>
+      <div class="logo-nav-container">
+        <img src="./assets/images/logo.png" alt="">
+      </div>
+
+      <div class="nav-utils-container">
+        <ul>
+          <li><a href=""><i class="fas fa-search"></i></a></li>
+
+          <li><a href="checkout.html"><i class="fas fa-shopping-cart"></i></a></li>
+          <li><a href=""><i class="fas fa-user"></i></a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+
+  </header>
+
+  <!-- /* ###########################   IMPRESSION SECTION   ###########################*/ -->
+
+  <section class="impression-section">
+    <div class="slider">
+      <div>
+        <div class="slide current">
+          <div class="content">
+            <h1>Clothings: Exclusive Collection</h1>
+            <p>
+              Check out our most recent exclusive formal clothing Collection
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>Bags: Exclusive Collection</h1>
+            <p>
+              Discover the collection as styled by fashion icon Caroline Issa in our new season campaign.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>Explore Trending</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
+              maxime, voluptatibus labore doloremque vero!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev" style="background-color: black;"><i class="fas fa-arrow-left"></i></button>
+        <button id="next" style="background-color: black;"><i class="fas fa-arrow-right"></i></button>
+      </div>
+
+  </section>
+  <!-- /*  ###########################   Categories SECTIION    ###########################   */ -->
+
+  <section class="shop-categories">
+    <h1>Shop By Category</h1>
+    <div class="categories-wrapper">
+      <div class="grid-col">
+        <div class="grid-col-div">
+          <div class="categories-image">
+            <a href="#"><img src="assets/images/1.png" style="height: 26rem;"></a>
+          </div>
+
+          <div class="categories-description">
+            <a href="#">Clothes</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="grid-col2">
+        <div class="grid-col-div">
+          <div class="categories-image">
+            <a href="#"><img src="assets/images/bags.jpg" style="height: 16rem;"></a>
+          </div>
+          <div class="categories-description">
+            <a href="#">Bags</a>
+          </div>
+        </div>
+        <div class="grid-col-div">
+          <div class="categories-image">
+            <a href="#"><img src="assets/images/watches.jpg" style="height: 8rem;"></a>
+          </div>
+
+          <div class="categories-description">
+            <a href="#">Watches</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="grid-col res-width">
+        <div class="grid-row">
+          <div class="grid-row-div" style="margin-bottom: 28px;">
+            <div class="categories-image">
+              <a href="#"><img src="assets/images/scarves.jpg" style="height: 11rem;"></a>
+            </div>
+
+            <div class="categories-description">
+              <a href="#">Scarves</a>
+            </div>
+          </div>
+          <div class="grid-row-div" style="margin-bottom: 28px;">
+            <div class="categories-image">
+              <a href="#"><img src="assets/images/shoes.png" style="height: 11rem;"></a>
+            </div>
+
+            <div class="categories-description">
+              <a href="#">Shoes</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="grid-col-div">
+          <div class="categories-image">
+            <a href="#"><img src="assets/images/accessories.jpg" style="height: 13rem;"></a>
+          </div>
+
+          <div class="categories-description">
+            <a href="#">Accessories</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- /*    ###########################     discount-section      ###########################   */ -->
+
+  </section>
+  <section class="discount-section">
+    <div class="discount-items-container">
+      <div class="discount-model">
+        <img src="assets/images/discount-model.png" alt="">
+      </div>
+      <div class="discount-price-container">
+        <div class="discount-text">
+          <h6
+            style="font-family: 'Montserrat', sans-serif; font-style: normal;font-weight: 500; font-size: 16px; color: purple;">
+            NEW DISCOUNT!!</h6>
+          <h2
+            style="font-family: 'Montserrat', sans-serif; text-transform: uppercase;font-style: normal; font-size: 32px;">
+            Brand Cortta</h2>
+          <h3 class="montserrat"><del>$1000.00</del><br />$200.00</h3>
+          <p>An amazing 80% Discount! Get the BRAND CORTTA now at a cheaper price</p>
+          <div class="social-icon-wraper mt-35">
+            <div class="social-icon">
+              <ul>
+                <li><a href="#" tabindex="0"><i class="zmdi zmdi-shopping-cart"></i></a>
+                </li>
+                <li><a href="#" tabindex="0"><i class="zmdi zmdi-favorite-outline"></i></a></li>
+                <li><a href="#" data-tooltip="Quick View" class="q-view" data-bs-toggle="modal" data-bs-target=".modal"
+                    tabindex="0"><i class="zmdi zmdi-eye"></i></a></li>
+                <li><a href="#" tabindex="0"><i class="zmdi zmdi-repeat"></i></a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="brand-timer" style="height: 100px;">
+
+        </div>
+
+
+      </div>
+
+      <!-- /*  ###########################     FEATURED OFFERS SECTION     ###########################   */ -->
+
+  </section>
+  <section class="featured-section">
+    <div class="product-filter-wrapper">
+
+      <div class="product-filter">
+        <h1>Featured Offers</h1>
+
+        <div class="sort">
+          <div class="collection-sort">
+            <label>Filter by:</label>
+            <select>
+              <option value="/">All</option>
+              <option value="/">Clothes</option>
+              <option value="/">Shoes</option>
+              <option value="/">Scarves</option>
+              <option value="/">Watches</option>
+              <option value="/">Accessories</option>
+            </select>
+          </div>
+
+          <div class="collection-sort">
+            <label>Sort by:</label>
+            <select>
+              <option value="/">Featured</option>
+              <option value="/">Trending</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="products">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/images/bags2.jpg">
+
+          </div>
+          <div class="product-info">
+            <h3>Marquis Bag</h3>
+            <h6>$99.99</h6>
+            <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/images/discount-model.png">
+          </div>
+          <div class="product-info">
+            <h3>Cortta Coat</h3>
+            <h6>$99.99</h6>
+            <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/images/outfit1.png">
+          </div>
+          <div class="product-info">
+            <h3>Dress</h3>
+            <h6>$99.99</h6>
+            <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/images/watches.jpg">
+          </div>
+          <div class="product-info">
+            <h3>Watch</h3>
+            <h6>$99.99</h6>
+            <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/images/shoes.png">
+          </div>
+          <div class="product-info">
+            <h3>Shoes</h3>
+            <h6>$99.99</h6>
+            <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/images/scarves.jpg">
+          </div>
+          <div class="product-info">
+            <h3>Scarf Men</h3>
+            <h6>$99.99</h6>
+            <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/images/suit.jpg">
+          </div>
+          <div class="product-info">
+            <h3>Suit</h3>
+            <h6>$99.99</h6>
+            <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/images/17.jpg">
+          </div>
+          <div class="product-info">
+            <h3>Parre Dress</h3>
+            <h6>$99.99</h6>
+            <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- /*    ###########################     CUSTOMIZE SECTION     ###########################   */ -->
+
+  <section class="customize-section">
+    <h1 style="color: black;">CUSTOMIZE YOUR CHOICES For Example Color</h1>
+    <div class="customize-container">
+      <div class="imgBx">
+        <img src="assets/images/outfit1.png" alt="">
+      </div>
+      <div class="details">
+        <div class="content">
+          <h2>Coporate Scoop Neck Dress <br>
+            <span>Running Collection</span>
+          </h2>
+          <p>
+            Featuring soft foam cushioning and lightweight, woven fabric in the upper, the Jordan Proto-Lyte is
+            made for all-day, bouncy comfort.
+
+            Cushioned Comfort: A full-length foam midsole delivers lightweight, plush cushioning.
+
+          </p>
+          <p class="product-colors">Available Colors:
+            <span class="black active"></span>
+            <span class="purple"></span>
+            <span class="darkBlue"></span>
+          </p>
+          <h3>$12,800</h3>
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="get-inspired-section">
+
+  </section>
+  <section class="recommended-section">
+    <div class="heading">
+      <h1 style="color: black;">Recommended For You</h1>
+    </div>
+    <div class="container" style="padding-top: 7vh; padding-bottom: 7vh;">
+      <div class="product-card ui-card">
+        <div class="product-image">
+          <img src="assets/images/bags.jpg">
+
+        </div>
+        <div class="product-info">
+          <h3>Marquis Bag</h3>
+          <h6>$99.99</h6>
+          <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+        </div>
+      </div>
+      <div class="product-card ui-card">
+        <div class="product-image">
+          <img src="assets/images/bags2.jpg">
+
+        </div>
+        <div class="product-info">
+          <h3>Marquis Bag</h3>
+          <h6>$99.99</h6>
+          <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+        </div>
+      </div>
+      <div class="product-card ui-card">
+        <div class="product-image">
+          <img src="assets/images/suit.jpg">
+
+        </div>
+        <div class="product-info">
+          <h3>Suit</h3>
+          <h6>$99.99</h6>
+          <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+        </div>
+      </div>
+      <div class="product-card ui-card">
+        <div class="product-image">
+          <img src="assets/images/discount-model.png">
+
+        </div>
+        <div class="product-info">
+          <h3>Corrta Coat</h3>
+          <h6>$99.99</h6>
+          <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+        </div>
+      </div>
+      <div class="product-card ui-card">
+        <div class="product-image">
+          <img src="assets/images/17.jpg">
+
+        </div>
+        <div class="product-info">
+          <h3>Parre Dress</h3>
+          <h6>$99.99</h6>
+          <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+        </div>
+      </div>
+
+      <div class="product-card ui-card">
+        <div class="product-image">
+          <img src="assets/images/watches.jpg">
+
+        </div>
+        <div class="product-info">
+          <h3>Watch</h3>
+          <h6>$99.99</h6>
+          <span class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- /*    ###########################     MAIN FEATURES SECTION     ###########################   */ -->
+
+  </section>
+  <section class="main-features">
+    <div class="row1-container">
+      <div class="box purple">
+        <h3>Free Shipping Worldwide</h3>
+        <div style="display: inline-flex;">
+          <p>Choose the best you can buy</p>
+          <img src="assets/images/6.png" alt="">
+        </div>
+
+      </div>
+
+      <div class="box purple" style="height: 150px;">
+        <h3>Crazy Discounts!</h3>
+        <div style="display: inline-flex;">
+          <p>Can reach 80%! Terms and Conditions apply</p>
+          <img src="assets/images/5.png" alt="">
+        </div>
+
+      </div>
+
+      <div class="box purple">
+        <h3>Support 24/7</h3>
+        <div style="display: inline-flex;">
+          <p>Dedicated team</p>
+          <img src="assets/images/7.png" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- /*    ###########################     FOOTER     ###########################   */ -->
+
+  <footer class="footer">
+    <div class="l-footer">
+      <h1><img src="assets/images/logo.png" alt=""></h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae
+        aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p>
+    </div>
+    <ul class="r-footer">
+      <li>
+        <h2>
+          Social</h2>
+        <ul class="box">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Dribbble</a></li>
+        </ul>
+      </li>
+      <li class="features">
+        <h2>
+          Information</h2>
+        <ul class="box h-box">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Sales</a></li>
+          <li><a href="#">Customer Service</a></li>
+        </ul>
+      </li>
+      <li>
+        <h2>
+          Legal</h2>
+        <ul class="box">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Contract</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="b-footer">
+      <p>All rights ©Dyor 2022 </p>
+    </div>
+  </footer>
+
+  <!-- NAVBAR ONSCROLL SCRIPT -->
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector(".navbar");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <!-- SLIDER SCRIPT -->
+  <script src="./js/slider.js"></script>
+
+  <!-- CUSTOMIZE SCRIPT -->
+  <script src="js/customize.js"></script>
+
+  <!-- recommended-section SCRIPT -->
+  <script src="js/home-recommended.js"></script>
+
+</body>
+
+</html>
