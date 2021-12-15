@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.925);
+  background-image: linear-gradient(to bottom, #1e122dcb, #2e0b24dc),
+    url(../img/Ai\ Artificial\ Intelligent\ Blue.png);
+  background-position: top;
+  background-size: cover;
+  background-color: rgb(13, 13, 32);
+  border-top: 4px solid #7edcff;
+  font-family: "roboto", sans-serif;
+}
+/* ************************** */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+  align-items: center;
+  /* position: fixed; */
+}
+.header_logo {
+  display: flex;
+  flex-direction: column;
+  transform: translate(10rem, -4rem);
+}
+.header_logo p {
+  font-style: italic;
+  font-size: 1.2rem;
+  transform: translate(1rem, -3rem);
+}
+.header_links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 6rem;
+  margin-right: 2.4rem;
+}
+header ul {
+  text-decoration: none;
+  list-style: none;
+}
+header ul a:link,
+header ul a:visited {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.header_links div {
+  display: flex;
+  flex-direction: column;
+  width: 8rem;
+  /* border-bottom: 3px solid #7edcff; */
+}
+
+.header_links-1 {
+  border-bottom: 3px solid #7edcff;
+}
+
+.home {
+  position: relative;
+}
+.home-content {
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+.home-content h1 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 3.8rem;
+}
+.home-content p {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.dots {
+  position: absolute;
+  display: flex;
+  gap: 1.5rem;
+  top: 35%;
+  left: 50%;
+  margin-bottom: 3rem;
+}
+.dots div {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: white;
+}
+#dots_1 {
+  background-color: #7edcff;
+}
+
+.home-abouts {
+  display: flex;
+  gap: 2.5rem;
+  background-color: #bbb9c1;
+  margin: 2.4rem auto;
+  width: 85%;
+  padding: 1.4rem 3.6rem;
+  /* position: absolute; */
+  /* transform: translate(10rem, 7rem); */
+}
+.home-abouts div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.2rem auto;
+  gap: 1.2rem;
+}
+.about-div {
+  text-align: center;
+}
+.home-abouts nav {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: #2e0b24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-icons {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: white;
+  text-align: center;
+}
+.home-abouts p {
+  color: black;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.home-abouts h4 {
+  color: black;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+/* *********************************************** */

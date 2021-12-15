@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+section {
+  background-image: linear-gradient(to bottom, #1e122d, #2e0b24);
+}
+h4 {
+  font-size: 2.4rem;
+  color: whitesmoke;
+  font-family: "roboto", sans-serif;
+  padding: 2.4rem;
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 3rem;
+  color: black;
+  font-size: 1.2rem;
+  font-family: "roboto", sans-serif;
+
+  padding: 6rem;
+}
+.about-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #bbb9c1;
+  border-radius: 1.5rem;
+  align-items: center;
+  /* gap: 5rem; */
+}
+
+.about-div header p,
+#interest {
+  text-align: center;
+}
+.qsi {
+  font-size: 1.8rem;
+}
+.left-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid whitesmoke;
+}
+.name {
+  font-size: 1.8rem;
+}
+.left-part nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 0.6rem;
+}
+
+.skills,
+.interests {
+  display: flex;
+  gap: 5rem;
+}
+.right-part {
+  padding: 1rem;
+  line-height: 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.profile-icon {
+  width: 20rem;
+  height: 19rem;
+  border-radius: 50%;
+  color: whitesmoke;
+  background-color: black;
+}
